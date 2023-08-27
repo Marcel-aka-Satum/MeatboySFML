@@ -1,0 +1,109 @@
+<ROOT>
+    <PLAYER>
+        <positieX>50</positieX>
+        <positieY>0</positieY>
+    </PLAYER>
+
+    <WALL>
+        <positieX>0</positieX>
+        <positieY>-5</positieY>
+        <width>1000</width>
+        <height>5</height>
+    </WALL>
+
+    <ENDGOAL>
+        <positieX>250</positieX>
+        <positieY>450</positieY>
+        <width>30</width>
+        <height>30</height>
+    </ENDGOAL>
+
+    <WALL>
+        <positieX>150</positieX>
+        <positieY>45</positieY>
+        <width>60</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>50</positieX>
+        <positieY>120</positieY>
+        <width>60</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>250</positieX>
+        <positieY>175</positieY>
+        <width>60</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>250</positieX>
+        <positieY>175</positieY>
+        <width>60</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>350</positieX>
+        <positieY>255</positieY>
+        <width>60</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>520</positieX>
+        <positieY>340</positieY>
+        <width>60</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>580</positieX>
+        <positieY>400</positieY>
+        <width>60</width>
+        <height>100</height>
+    </WALL>
+
+    <WALL>
+        <positieX>580</positieX>
+        <positieY>400</positieY>
+        <width>60</width>
+        <height>100</height>
+    </WALL>
+
+    <WALL>
+        <positieX>400</positieX>
+        <positieY>530</positieY>
+        <width>60</width>
+        <height>10</height>
+    </WALL>
+
+    <SPIKE>
+        <positieX>0</positieX>
+        <positieY>75</positieY>
+        <width>20</width>
+        <height>20</height>
+        <dynamic>True</dynamic>
+        <x2>800</x2>
+        <y2>75</y2>
+    </SPIKE>
+
+    <SPIKE>
+        <positieX>400</positieX>
+        <positieY>400</positieY>
+        <width>20</width>
+        <height>20</height>
+        <dynamic>True</dynamic>
+        <x2>600</x2>
+        <y2>600</y2>
+    </SPIKE>
+
+
+
+    <CAMERAUTO>
+        <isAuto>OFF</isAuto>
+    </CAMERAUTO>
+</ROOT>

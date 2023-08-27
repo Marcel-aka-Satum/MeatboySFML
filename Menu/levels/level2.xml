@@ -1,0 +1,151 @@
+<ROOT>
+    <PLAYER>
+        <positieX>50</positieX>
+        <positieY>0</positieY>
+    </PLAYER>
+
+    <WALL>
+        <positieX>0</positieX>
+        <positieY>-5</positieY>
+        <width>1000</width>
+        <height>5</height>
+    </WALL>
+
+    <WALL>
+        <positieX>0</positieX>
+        <positieY>300</positieY>
+        <width>300</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>300</positieX>
+        <positieY>300</positieY>
+        <width>20</width>
+        <height>200</height>
+    </WALL>
+
+    <WALL>
+        <positieX>300</positieX>
+        <positieY>500</positieY>
+        <width>400</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>700</positieX>
+        <positieY>500</positieY>
+        <width>20</width>
+        <height>100</height>
+    </WALL>
+
+    <WALL>
+        <positieX>720</positieX>
+        <positieY>600</positieY>
+        <width>-720</width>
+        <height>20</height>
+    </WALL>
+
+    <SPIKE>
+        <positieX>500</positieX>
+        <positieY>620</positieY>
+        <width>20</width>
+        <height>20</height>
+        <dynamic>True</dynamic>
+        <x2>500</x2>
+        <y2>800</y2>
+    </SPIKE>
+
+    <SPIKE>
+        <positieX>300</positieX>
+        <positieY>620</positieY>
+        <width>20</width>
+        <height>20</height>
+        <dynamic>True</dynamic>
+        <x2>300</x2>
+        <y2>800</y2>
+    </SPIKE>
+
+    <WALL>
+        <positieX>100</positieX>
+        <positieY>30</positieY>
+        <width>70</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>220</positieX>
+        <positieY>60</positieY>
+        <width>70</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>340</positieX>
+        <positieY>110</positieY>
+        <width>70</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>420</positieX>
+        <positieY>170</positieY>
+        <width>70</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>340</positieX>
+        <positieY>245</positieY>
+        <width>70</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>550</positieX>
+        <positieY>350</positieY>
+        <width>70</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>750</positieX>
+        <positieY>350</positieY>
+        <width>100</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>900</positieX>
+        <positieY>410</positieY>
+        <width>50</width>
+        <height>20</height>
+    </WALL>
+
+    <WALL>
+        <positieX>800</positieX>
+        <positieY>470</positieY>
+        <width>50</width>
+        <height>100</height>
+    </WALL>
+
+    <SPIKE>
+        <positieX>100</positieX>
+        <positieY>0</positieY>
+        <width>900</width>
+        <height>20</height>
+    </SPIKE>
+
+
+    <ENDGOAL>
+        <positieX>100</positieX>
+        <positieY>650</positieY>
+        <width>20</width>
+        <height>20</height>
+    </ENDGOAL>
+
+    <CAMERAUTO>
+        <isAuto>ON</isAuto>
+    </CAMERAUTO>
+
+</ROOT>

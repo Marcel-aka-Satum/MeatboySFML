@@ -7,6 +7,7 @@
 
 #include "../Logic/AbstractWindow.h"
 #include <SFML/Graphics.hpp>
+#include "StateManager.h"
 using namespace std;
 using namespace sf;
 
@@ -17,15 +18,33 @@ using namespace sf;
 class ConcreteWindow : public AbstractWindow {
 private:
     RenderWindow& window;
-    int width;
-    int height;
+    float width;
+    float height;
+    Texture background;
+    Sprite sprite;
+    StateManager& stateManager;
+
+
 public:
-    ConcreteWindow(int width2, int height2, RenderWindow& window2);
-    virtual void clear() override;
-    virtual void close() override;
-    virtual char checkInput() override;
-    virtual void display() override;
-    virtual bool isOpen() override;
+    ConcreteWindow(int width2, int height2, RenderWindow& window2, StateManager& stateManager2);
+    ///clears the screen
+    void clear() override;
+    ///checks for keyboardpresses
+    void key_board_press(char* keys_pressed)override;
+    ///checks if the window is open
+    bool isOpen()override;
+    ///getter for windowHeight
+    float getWindowHeight()override;
+    ///getter for windowWidth
+    float getWindowWidth()override;
+    ///display things on screen
+    void display()override;
+    ///close the window
+    void close()override;
+    ///check if closed
+    void checkClose()override;
+    ///draw the sprite on the window
+    void draw()override;
 
 };
 

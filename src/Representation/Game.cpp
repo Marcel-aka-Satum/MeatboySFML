@@ -3,7 +3,9 @@
 //
 
 #include "Game.h"
-
+#include "StateManager.h"
+#include "Menu.h"
+shared_ptr<StopWatch> StopWatch::stopwatch = nullptr;
 
 Game::Game(int width2, int height2) {
     width = width2;
@@ -14,22 +16,17 @@ void Game::runGame(){
     //// setting the window
     RenderWindow renderWindow(VideoMode(width, height), "<Meatboy/>");
     renderWindow.setFramerateLimit(60);
-    ConcreteWindow window(width, height, renderWindow);
+    ///// create window and factory
+    StateManager stateManager;
+    ConcreteWindow window(width, height, renderWindow, stateManager);
 
-    /// Setting the background
-    Texture texture;
-    if (!texture.loadFromFile("images/sakuraIMG.jpg")){
-        cout << "cannot load the background" << endl;
-        system("pause");
-    }
-    Sprite background;
-    background.setTexture(texture);
+    stateManager.addState(shared_ptr<State>(new Menu(renderWindow, stateManager, width, height)));
 
-    ConcreteFactory factory(renderWindow);
 
     while (window.isOpen()){
-        World world(window, factory);
-        world.runGameLoop();
+        stateManager.processStateChanges();
+        stateManager.getTopStack()->handleInput();
+        stateManager.getTopStack()->update();
     }
 }
 
